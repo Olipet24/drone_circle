@@ -15,3 +15,11 @@ Steps to run this package:
 3. cd .. into the root of the ros2 workspace, and run rosdep install -i --from-path src --rosdistro humble -y and then colcon build
 4. Open a seperate terminal, and execute the bash script launch_drone_circle in the terminal (make sure that this file is marked as executable). Before running, make sure the bash script is going into the right directories and executing the right package.
 6. Watch as the drone flies in a circle
+
+In order to spawn in the world file, follow theses steps:
+
+1. move the singleHouseWorld.sdf file to world folder in the Px4-Autopilot folder, the exact path is: /DIRECTORY_CONTAINING_PX4/PX4-Autopilot/Tools/simulation/gz/worlds
+2. edit the sdf file uri pathways to where the singleHouse.dae file is located, where the comments say to add
+3. if needed, change the scale of the model by editing the three numbers in the scale tag of the house model.
+4. edit the launch_drone_circle.sh file and uncomment the singleHouseWorld make gz command, and comment out the previous command
+5. run the launch_drone_circle.sh file as before
