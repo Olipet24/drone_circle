@@ -123,7 +123,7 @@ gz service -s /world/empty/create \
       </link>
     </model>
     
-	<!-- <actor name="actor_walking">
+	<!-- <actor name="actor_walking"> This code adds a moving actor to the scene to walk around in a square
 		<skin>
 			<filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
 			<scale>1.0</scale>
@@ -184,7 +184,7 @@ gz service -s /world/empty/create \
         <visual name="home_visual">
           <geometry>
             <mesh>
-              <uri>file:///home/olipet24/Downloads/singleHouse.dae</uri>
+              <uri>file:///FULL/PATH/TO/singleHouse.dae</uri>  <!-- Change this directory to where you have the .dae file saved -->
               <scale>2 2 2</scale> <!-- Scale this accordingly -->
             </mesh>
           </geometry>
@@ -198,7 +198,7 @@ gz service -s /world/empty/create \
         <collision name="home_collision">
           <geometry>
             <mesh>
-              <uri>file:///home/olipet24/Downloads/singleHouse.dae</uri>
+              <uri>file:///FULL/PATH/TO/singleHouse.dae</uri>  <!-- Change this directory to where you have the .dae file saved -->
             </mesh>
           </geometry>
         </collision>
